@@ -1,11 +1,13 @@
 # keyboard-hear
 
-## Isn't responsive. 
+### Isn't responsive. 
 
-This is a fun project I made to learn more about CSS. 
-I made CSS keyboard on screen and whenever you press the actual button on your keyboard, it highlights it on screen and tells you the 
+**[Try it out](https://eclairsp.github.io/keyboard-hear/)**
+
+This is a fun project I made to learn CSS. 
+I made a CSS keyboard on screen and whenever you press the actual button on your keyboard, it highlights it on screen and tells you the 
 button pressed via voice.
 
-The audio files were made using Python(Google text-to-speech) and some off the medium article.
+The audio files were made using Python(Google text-to-speech) and some off a medium article.
 
 Will try to use the new HTML5 Web Speech API next
