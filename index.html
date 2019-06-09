@@ -1,128 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Keyboard</title>
-
-	<link href="https://fonts.googleapis.com/css?family=Heebo:800|Roboto" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keyboard Hear</title>
+    <link rel="stylesheet" href="keyboard.css">
 </head>
 <body>
-	<div id="overlay" onclick="off()">
-		<div class="over">
-			<h1>Please use a large screen for best experience.</h1>
-			<h3>(click anywhere to dismiss.)</h3>
-		</div>
-	</div>
-
-	<div id="keyboard" class="keyboard">
-		<div class="number-row row">
-			<button id="item-back-quote" class="keys">~<br>`</button>
-			<button id="item-1" class="keys"><span class="keys-top">!</span><br>1</button>
-			<button id="item-2" class="keys"><span class="keys-top">@</span><br>2</button>
-			<button id="item-3" class="keys"><span class="keys-top">#</span><br>3</button>
-			<button id="item-4" class="keys"><span class="keys-top">$</span><br>4</button>
-			<button id="item-5" class="keys"><span class="keys-top">%</span><br>5</button>
-			<button id="item-6" class="keys"><span class="keys-top">^</span><br>6</button>
-			<button id="item-7" class="keys"><span class="keys-top">&</span><br>7</button>
-			<button id="item-8" class="keys"><span class="keys-top">*</span><br>8</button>
-			<button id="item-9" class="keys"><span class="keys-top">(</span><br>9</button>
-			<button id="item-0" class="keys"><span class="keys-top">)</span><br>0</button>
-			<button id="item-dash" class="keys"><span class="keys-top">_</span><br>-</button>
-			<button id="item-hyphen" class="keys"><span class="keys-top">+</span><br>=</button>
-			<button id="item-backspace" class="keys">backspace</button>
-		</div>
-
-		<div class="alphabet-row-1 row">
-			<button id="item-tab" class="keys">tab</button>
-			<button id="item-Q" class="keys">Q</button>
-			<button id="item-W" class="keys">W</button>
-			<button id="item-E" class="keys">E</button>
-			<button id="item-R" class="keys">R</button>
-			<button id="item-T" class="keys">T</button>
-			<button id="item-Y" class="keys">Y</button>
-			<button id="item-U" class="keys">U</button>
-			<button id="item-I" class="keys">I</button>
-			<button id="item-O" class="keys">O</button>
-			<button id="item-P" class="keys">P</button>
-			<button id="item-open-bracket" class="keys"><span class="keys-top">{</span><br>[</button>
-			<button id="item-close-bracket" class="keys"><span class="keys-top">}</span><br>]</button>
-			<button id="item-backward-slash" class="keys"><span class="keys-top">|</span><br>\</button>
-		</div>
-
-		<div class="alphabet-row-2 row">
-			<button id="item-caps" class="keys">caps</button>
-			<button id="item-A" class="keys">A</button>
-			<button id="item-S" class="keys">S</button>
-			<button id="item-D" class="keys">D</button>
-			<button id="item-F" class="keys">F</button>
-			<button id="item-G" class="keys">G</button>
-			<button id="item-H" class="keys">H</button>
-			<button id="item-J" class="keys">J</button>
-			<button id="item-K" class="keys">K</button>
-			<button id="item-L" class="keys">L</button>
-			<button id="item-semi-colon" class="keys"><span class="keys-top">:</span><br>;</button>
-			<button id="item-1apostrophe" class="keys"><span class="keys-top">"</span><br>"'</button>
-			<button id="item-enter" class="keys">enter</button>
-		</div>
-
-		<div class="alphabet-row-3 row">
-			<button id="item-shift" class="keys">shift</button>
-			<button id="item-Z" class="keys">Z</button>
-			<button id="item-X" class="keys">X</button>
-			<button id="item-C" class="keys">C</button>
-			<button id="item-V" class="keys">V</button>
-			<button id="item-B" class="keys">B</button>
-			<button id="item-N" class="keys">N</button>
-			<button id="item-M" class="keys">M</button>
-			<button id="item-comma" class="keys"><span class="keys-top"><</span><br>,</button>
-			<button id="item-period" class="keys"><span class="keys-top">></span><br>.</button>
-			<button id="item-forward-slash" class="keys"><span class="keys-top">?</span><br>/</button>
-			<button id="item-shift" class="keys">shift</button>
-		</div>
-	</div>
-
-	<div class="audio">
-		<audio id="A" src="sounds/A.mp3" preload="auto"></audio>
-		<audio id="B" src="sounds/B.mp3" preload="auto"></audio>
-		<audio id="C" src="sounds/C.mp3" preload="auto"></audio>
-		<audio id="D" src="sounds/D.mp3" preload="auto"></audio>
-		<audio id="E" src="sounds/E.mp3" preload="auto"></audio>
-		<audio id="F" src="sounds/F.mp3" preload="auto"></audio>
-		<audio id="G" src="sounds/G.mp3" preload="auto"></audio>
-		<audio id="H" src="sounds/H.mp3" preload="auto"></audio>
-		<audio id="I" src="sounds/I.mp3" preload="auto"></audio>
-		<audio id="J" src="sounds/J.mp3" preload="auto"></audio>
-		<audio id="K" src="sounds/K.mp3" preload="auto"></audio>
-		<audio id="L" src="sounds/L.mp3" preload="auto"></audio>
-		<audio id="M" src="sounds/M.mp3" preload="auto"></audio>
-		<audio id="N" src="sounds/N.mp3" preload="auto"></audio>
-		<audio id="O" src="sounds/O.mp3" preload="auto"></audio>
-		<audio id="P" src="sounds/P.mp3" preload="auto"></audio>
-		<audio id="Q" src="sounds/Q.mp3" preload="auto"></audio>
-		<audio id="R" src="sounds/R.mp3" preload="auto"></audio>
-		<audio id="S" src="sounds/S.mp3" preload="auto"></audio>
-		<audio id="T" src="sounds/T.mp3" preload="auto"></audio>
-		<audio id="U" src="sounds/U.mp3" preload="auto"></audio>
-		<audio id="V" src="sounds/V.mp3" preload="auto"></audio>
-		<audio id="W" src="sounds/W.mp3" preload="auto"></audio>
-		<audio id="X" src="sounds/X.mp3" preload="auto"></audio>
-		<audio id="Y" src="sounds/Y.mp3" preload="auto"></audio>
-		<audio id="Z" src="sounds/Z.mp3" preload="auto"></audio>
-		<audio id="0" src="sounds/0.mp3" preload="auto"></audio>
-		<audio id="1" src="sounds/1.mp3" preload="auto"></audio>
-		<audio id="2" src="sounds/2.mp3" preload="auto"></audio>
-		<audio id="3" src="sounds/3.mp3" preload="auto"></audio>
-		<audio id="4" src="sounds/4.mp3" preload="auto"></audio>
-		<audio id="5" src="sounds/5.mp3" preload="auto"></audio>
-		<audio id="6" src="sounds/6.mp3" preload="auto"></audio>
-		<audio id="7" src="sounds/7.mp3" preload="auto"></audio>
-		<audio id="8" src="sounds/8.mp3" preload="auto"></audio>
-		<audio id="9" src="sounds/9.mp3" preload="auto"></audio>
-    </div>
+    <section class="overlay-wrapper" onclick="off()">
+        <div class="rules">
+            <button class="close-btn" onclick="off()">
+                X
+            </button>
+            <h1 class="text">How to use?</h1>
+            <ul class="list">
+                <li class="item">Click on the keys on your keyboard. The same keys will light up onscreen</li>
+                <li class="item">The keys will also be said outloud.</li>
+                    <br>
+                <li class="item">Press the mic button (bottom right of keyboard on screen).</li>
+                <li class="item">Speak the key you want to press. It will light up and said outloud.</li>
+                <li class="item">Speaking is not fully supported.</li>
+                    <br>
+                <li class="item">Doesn't work on all browsers.</li>
+                    <br>
+                <li class="item">Click anywhere to dismiss</li>
+            </ul>
+        </div>
+    </section>
+    <h1 class="text">Currently Speaking: <span class="speaking">No</span></h1>
+    <section id="keyboard" class="keyboard">
+        <div class="row-1">
+            <button id="`" onclick="pulse('`')" class="key"><span>~</span><br>`</button>
+            <button id="1" onclick="pulse('1')" class="key"><span>!</span><br>1</button>
+            <button id="2" onclick="pulse('2')" class="key"><span>@</span><br>2</button>
+            <button id="3" onclick="pulse('3')" class="key"><span>#</span><br>3</button>
+            <button id="4" onclick="pulse('4')" class="key"><span>$</span><br>4</button>
+            <button id="5" onclick="pulse('5')" class="key"><span>%</span><br>5</button>
+            <button id="6" onclick="pulse('6')" class="key"><span>^</span><br>6</button>
+            <button id="7" onclick="pulse('7')" class="key"><span>&</span><br>7</button>
+            <button id="8" onclick="pulse('8')" class="key"><span>*</span><br>8</button>
+            <button id="9" onclick="pulse('9')" class="key"><span>(</span><br>9</button>
+            <button id="0" onclick="pulse('0')" class="key"><span>)</span><br>0</button>
+            <button id="-" onclick="pulse('-')" class="key"><span>_</span><br>-</button>
+            <button id="=" onclick="pulse('=')" class="key"><span>+</span><br>=</button>
+            <button id="backspace" onclick="pulse('backspace')"class="key">backspace</button>
+        </div>
+        <div class="row-2">
+            <button id="tab" onclick="pulse('tab')" class="key">tab</button>
+            <button id="q" onclick="pulse('q')" class="key">Q</button>
+            <button id="w" onclick="pulse('w')" class="key">W</button>
+            <button id="e" onclick="pulse('e')" class="key">E</button>
+            <button id="r" onclick="pulse('r')" class="key">R</button>
+            <button id="t" onclick="pulse('t')" class="key">T</button>
+            <button id="y" onclick="pulse('y')" class="key">Y</button>
+            <button id="u" onclick="pulse('u')" class="key">U</button>
+            <button id="i" onclick="pulse('i')" class="key">I</button>
+            <button id="o" onclick="pulse('o')" class="key">O</button>
+            <button id="p" onclick="pulse('p')" class="key">P</button>
+            <button id="[" onclick="pulse('[')" class="key"><span>{</span><br>[</button>
+            <button id="]" onclick="pulse(']')" class="key"><span>}</span><br>]</button>
+            <button id="\" onclick="pulse('\\')" class="key"><span>|</span><br>\</button>
+        </div>
+        <div class="row-3">
+            <button id="capslock" onclick="pulse('capslock')" class="key">caps lock</button>
+            <button id="a" onclick="pulse('a')" class="key">A</button>
+            <button id="s" onclick="pulse('s')" class="key">S</button>
+            <button id="d" onclick="pulse('d')" class="key">D</button>
+            <button id="f" onclick="pulse('f')" class="key">F</button>
+            <button id="g" onclick="pulse('g')" class="key">G</button>
+            <button id="h" onclick="pulse('h')" class="key">H</button>
+            <button id="j" onclick="pulse('j')" class="key">J</button>
+            <button id="k" onclick="pulse('k')" class="key">K</button>
+            <button id="l" onclick="pulse('l')" class="key">L</button>
+            <button id=";" onclick="pulse(';')" class="key"><span>:</span><br>;</button>
+            <button id="'" onclick="pulse('\'')" class="key"><span>"</span><br>'</button>
+            <button id="enter" onclick="pulse('enter')" class="key">enter</button>
+        </div>
+        <div class="row-4">
+            <button id="shiftleft" onclick="pulse('shiftleft')" class="key">shift</button>
+            <button id="z" onclick="pulse('z')" class="key">Z</button>
+            <button id="x" onclick="pulse('x')" class="key">X</button>
+            <button id="c" onclick="pulse('c')" class="key">C</button>
+            <button id="v" onclick="pulse('v')" class="key">V</button>
+            <button id="b" onclick="pulse('b')" class="key">B</button>
+            <button id="n" onclick="pulse('n')" class="key">N</button>
+            <button id="m" onclick="pulse('m')" class="key">M</button>
+            <button id="," onclick="pulse(',')" class="key"><span><</span><br>,</button>
+            <button id="." onclick="pulse('.')" class="key"><span>></span><br>.</button>
+            <button id="/" onclick="pulse('/')" class="key"><span>?</span><br>/</button>
+            <button id="shiftright" onclick="pulse('shiftright')" class="key">shift</button>
+        </div>
+        <div class="row-5">
+            <button id="controlleft" onclick="pulse('controlleft')" class="key">ctrl</button>
+            <button id="windowsleft" onclick="pulse('windowsleft')" class="key">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M480 265H232v179l248 36V265zM216 265H32v150l184 26.7V265zM480 32L232 67.4V249h248V32zM216 69.7L32 96v153h184V69.7z"/>
+                </svg>
+            </button>
+            <button id="altleft" onclick="pulse('altleft')" class="key">alt</button>
+            <button id="space" onclick="pulse('space')" class="key"></button>
+            <button id="altright" onclick="pulse('altright')" class="key">alt</button>
+            <button id="windowsright" onclick="pulse('windowsright')" class="key">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M480 265H232v179l248 36V265zM216 265H32v150l184 26.7V265zM480 32L232 67.4V249h248V32zM216 69.7L32 96v153h184V69.7z"/>
+                    </svg>
+                </button>
+            <button id="controlright" onclick="pulse('controlright')" class="key">ctrl</button>
+            <button onclick="listen()" class="key">
+                <svg class="mic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M256 320c37.712 0 68.571-30.924 68.571-68.714V100.714C324.571 62.924 293.712 32 256 32s-68.571 30.924-68.571 68.714v150.572c0 37.79 30.859 68.714 68.571 68.714zm121.139-75.452c0 68.714-58.282 116.815-121.139 116.815s-121.139-48.102-121.139-116.815H96c0 77.873 61.719 143.153 137.144 153.465V480h45.713v-81.987C354.281 386.561 416 322.421 416 244.548h-38.861z"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+    <h1 class="text">Did you say: <span class="recognitionGuess">""</span></h1>
+    <button class="btn" onclick="on()">
+        <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M256 90c44.3 0 86 17.3 117.4 48.6C404.7 170 422 211.7 422 256s-17.3 86-48.6 117.4C342 404.7 300.3 422 256 422s-86-17.3-117.4-48.6C107.3 342 90 300.3 90 256s17.3-86 48.6-117.4C170 107.3 211.7 90 256 90m0-42C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48z" />
+            <path d="M235 339h42v42h-42zM276.8 318h-41.6c0-67 62.4-62.2 62.4-103.8 0-22.9-18.7-41.7-41.6-41.7S214.4 192 214.4 214h-41.6c0-46 37.2-83 83.2-83s83.2 37.1 83.2 83.1c0 52-62.4 57.9-62.4 103.9z" />
+        </svg>
+    </button>
 </body>
-<script type="text/javascript" src="buttons.js"></script>
+
+<script src="keyboard.js"></script>
+
 </html>
