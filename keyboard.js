@@ -6,14 +6,31 @@ var SpeechRecognitionEvent =
 var recognition = new SpeechRecognition();
 recognition.lang = "en-US";
 
+let body = document.querySelector("body").style;
+let keyboard = document.querySelector(".keyboard").style;
+
 on = () => {
     document.getElementsByClassName("overlay-wrapper")[0].style.display =
         "flex";
+    if (window.innerWidth < 1100) {
+        keyboard.display = "none";
+        body.overflow = "hidden";
+        body.margin = "0";
+        body.width = "100vw";
+        body.height = "100vh";
+    }
 };
 
 off = () => {
     document.getElementsByClassName("overlay-wrapper")[0].style.display =
         "none";
+    if (window.innerWidth < 1100) {
+        keyboard.display = "block";
+        body.overflow = "scroll";
+        body.margin = "10px";
+        body.width = "100%";
+        body.height = "100%";
+    }
 };
 
 pulse = id => {
